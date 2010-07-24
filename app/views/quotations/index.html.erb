@@ -1,0 +1,24 @@
+<h1>Listing quotations</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Author</th>
+    <th>User</th>
+  </tr>
+
+<% @quotations.each do |quotation| %>
+  <tr>
+    <td><%=h quotation.content %></td>
+    <td><%=h quotation.author %></td>
+    <td><%=h quotation.user_id %></td>
+    <td><%= link_to 'Show', quotation %></td>
+    <td><%= link_to 'Edit', edit_quotation_path(quotation) %></td>
+    <td><%= link_to 'Destroy', quotation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New quotation', new_quotation_path %>

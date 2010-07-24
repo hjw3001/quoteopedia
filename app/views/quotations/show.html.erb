@@ -1,0 +1,18 @@
+<p>
+  <b>Content:</b>
+  <%=h @quotation.content %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @quotation.author %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @quotation.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_quotation_path(@quotation) %> |
+<%= link_to 'Back', quotations_path %>
