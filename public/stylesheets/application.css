@@ -1,8 +1,23 @@
 body {
   background-image:url('/images/background.png');
   background-repeat:repeat-x;
+  color: rgb(210,210,210);
+  font-family: sans-serif;
+}
+
+#content {
+  padding: 20px;
 }
 
 #header {
   text-align:center;
+}
+
+#quotation {
+  font-size: 20pt;
+}
+
+#author {
+  font-size: 18pt;
+  margin-top: 10px;
 }
