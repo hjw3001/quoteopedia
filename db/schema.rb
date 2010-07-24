@@ -12,8 +12,8 @@
 ActiveRecord::Schema.define(:version => 20100724034657) do
 
   create_table "quotations", :force => true do |t|
-    t.string   "content"
-    t.string   "author"
+    t.text     "content"
+    t.text     "author"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

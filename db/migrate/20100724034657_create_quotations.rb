@@ -1,8 +1,8 @@
 class CreateQuotations < ActiveRecord::Migration
   def self.up
     create_table :quotations do |t|
-      t.string :content
-      t.string :author
+      t.text :content
+      t.text :author
       t.integer :user_id
 
       t.timestamps
