@@ -5,6 +5,10 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  border: 0;
+}
+
 #content {
   padding: 20px;
 }
