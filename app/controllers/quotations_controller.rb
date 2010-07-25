@@ -5,7 +5,6 @@ class QuotationsController < ApplicationController
     @quotations = Quotation.all
     @quotation = @quotations[rand(@quotations.size)]
 
-    DailyMailer.deliver_send_quotations
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @quotations }
