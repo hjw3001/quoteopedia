@@ -1,9 +1,9 @@
 class DailyMailer < ActionMailer::Base
-  def send_quotations  
+  def send_quotations
     recipients [ENV['FACEBOOK_EMAIL'], ENV['ADMIN_EMAIL']]
     from       "hjw3001@gmail.com"
-    subject    "Daily Quotation"
-    body       :quotation => random_quotation
+    subject    random_quotation
+    body       :quotation => "Daily Quotation"
   end
   
   def random_quotation
