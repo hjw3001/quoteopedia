@@ -21,3 +21,8 @@ body {
   font-size: 18pt;
   margin-top: 10px;
 }
+
+#badges {
+  text-align: center;
+  padding-top: 80px;
+}
