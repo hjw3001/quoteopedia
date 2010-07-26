@@ -1,6 +1,7 @@
 task :cron => :environment do
-  # Everynight at midnight, send out a random quote
-  if Time.now.hour == 0
-    DailyMailer.deliver_send_quotations
-  end
+  # Quoteopedia on Heroku is configured for daily cron.
+  # No need to check the time before sending, the job
+  # runs once a day, just send the quotations whenever
+  # the cron job is called.
+  DailyMailer.deliver_send_quotations
 end
