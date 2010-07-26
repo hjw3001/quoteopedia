@@ -26,7 +26,13 @@ img {
   margin-top: 10px;
 }
 
-#badges {
+#footer {
   text-align: center;
   padding-top: 80px;
+}
+
+#footer a {
+  color: #7C95AC;
+  margin: 0 8px;
+  white-space: nowrap;
 }
