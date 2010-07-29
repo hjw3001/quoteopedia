@@ -7,11 +7,8 @@ class DailyMailer < ActionMailer::Base
   end
   
   def random_quotation
-    # Get all the quotations in the db
-    quotations = Quotation.all
- 
     # Select a quotation at random
-    quotation = quotations[rand(quotations.size)]
+    quotation = Quotation.random_quotation
     "#{quotation.content} #{quotation.author}"
   end
 end

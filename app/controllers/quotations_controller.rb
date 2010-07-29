@@ -2,8 +2,7 @@ class QuotationsController < ApplicationController
   # GET /quotations
   # GET /quotations.xml
   def index
-    @quotations = Quotation.all
-    @quotation = @quotations[rand(@quotations.size)]
+    @quotation = Quotation.random_quotation
 
     respond_to do |format|
       format.html # index.html.erb
