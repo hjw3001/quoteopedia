@@ -22,7 +22,7 @@ img {
 
 #main {
   background-color: #193042;
-  padding: 20px;
+  padding: 40px;
 }
 
 #footer {
@@ -36,8 +36,8 @@ img {
 }
 
 #author {
-  font-size: 18pt;
-  margin-top: 10px;
+  font-size: 16pt;
+  margin-top: 20px;
 }
 
 #footer a {
