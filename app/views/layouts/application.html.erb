@@ -14,9 +14,12 @@
     <img src="images/logo.png" width="341" height="68" alt="Quoteopedia"/>
   </div>
   <div id="main">
-    <p style="color: green"><%= notice %></p>
-
+    <p class="notice"><%= flash[:notice] %></p>
+    <p class="alert"><%= flash[:alert] %></p>
     <%= yield %>
+  </div>
+  <div id="facebook">
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquoteopedia.heroku.com%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=dark&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
   </div>
   <div id="footer">
     email <a href="mailto:hjw3001@gmail.com">hjw3001@gmail.com</a>
